@@ -1,0 +1,19 @@
+//functional Recursion technic
+//Sum of first N no.
+#include <stdio.h>
+
+int summation(n)
+{
+	if(n == 0)
+    {
+        return;
+    }
+    return n+summation(n-1);
+}
+
+int main() 
+{
+	int n;
+	scanf("%d",&n); 
+    printf("%d",summation(n));
+}
