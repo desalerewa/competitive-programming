@@ -1,0 +1,20 @@
+//Pramaterized Recursion technic
+//Sum of first N no.
+#include <stdio.h>
+
+void summation(i,sum)
+{
+	if(i<1)
+    {
+    	printf("%d",sum);
+        return;
+    }
+    summation(i-1,sum+i);
+}
+
+int main() 
+{
+	int n;
+	scanf("%d",&n); 
+    summation(n,0);
+}
