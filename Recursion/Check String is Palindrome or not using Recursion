@@ -1,0 +1,16 @@
+#Check String is palindrome or not using recursion
+
+def str_palindrome(s,i):
+    if(i >= len(s)//2):
+        return True
+    elif(s[i] != s[len(s)-i-1]):
+        return False
+    else:
+       return str_palindrome(s,i+1)
+
+
+s = input()
+if(str_palindrome(s,0)):
+    print("Palindrome")
+else:
+    print("Not Palindrome")
