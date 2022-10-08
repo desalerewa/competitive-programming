@@ -1,0 +1,15 @@
+#reverse array/list using single varible
+
+def reverse(a,i):
+    if(i >= len(a)//2):
+        print(a)
+    else:
+        x    = a[i] 
+        a[i] = a[len(a)-i-1]
+        a[len(a)-i-1] = x
+        
+        reverse(a,i+1)
+
+
+a = list(map(int,input().split()))
+reverse(a,0)
